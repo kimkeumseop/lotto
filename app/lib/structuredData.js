@@ -36,7 +36,8 @@ export function buildSiteSchema() {
         '@type': 'WebSite',
         name: '로또 번호 생성기',
         url: siteUrl,
-        description: '로또 645 자동 번호 생성, 저장, 최근 기록, 당첨 번호 확인 기능을 제공하는 사이트',
+        description:
+          '로또 645 자동 번호 생성, 저장 기록 확인, 당첨 번호 비교 기능을 제공하는 정보형 서비스입니다.',
       },
       {
         '@type': 'Organization',

@@ -1,39 +1,27 @@
 import Link from 'next/link'
+import styles from './chrome.module.css'
 
 export default function Header() {
   return (
-    <header
-      style={{
-        borderBottom: '1px solid var(--border)',
-        background: 'var(--surface)',
-      }}
-    >
-      <div
-        style={{
-          maxWidth: '560px',
-          margin: '0 auto',
-          padding: '0 1rem',
-          height: '52px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-        }}
-      >
-        <Link
-          href="/"
-          style={{
-            fontSize: '15px',
-            fontWeight: '700',
-            color: 'var(--text)',
-            letterSpacing: '-0.02em',
-          }}
-        >
-          로또 번호 생성기
+    <header className={styles.header}>
+      <div className={styles.inner}>
+        <Link href="/" className={styles.brand}>
+          <span className={styles.brandBadge}>Lotto 645</span>
+          <span className={styles.brandText}>
+            <span className={styles.brandTitle}>로또 번호 생성기</span>
+            <span className={styles.brandSub}>자동 번호 생성과 당첨 번호 확인</span>
+          </span>
         </Link>
 
-        <nav style={{ display: 'flex', gap: '14px' }}>
-          <Link href="/about" style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
+        <nav className={styles.nav}>
+          <Link href="/about" className={styles.navLink}>
             소개
+          </Link>
+          <Link href="/privacy" className={styles.navLink}>
+            개인정보처리방침
+          </Link>
+          <Link href="/terms" className={styles.navLink}>
+            이용약관
           </Link>
         </nav>
       </div>
