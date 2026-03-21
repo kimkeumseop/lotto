@@ -1,0 +1,14 @@
+node_modules/
+.next/
+
+# logs
+*.log
+npm-debug.log*
+.dev-server.*
+
+# local environment
+.env*
+
+# OS/editor
+.DS_Store
+Thumbs.db
