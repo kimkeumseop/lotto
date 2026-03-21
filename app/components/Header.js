@@ -32,9 +32,6 @@ export default function Header() {
         </Link>
 
         <nav style={{ display: 'flex', gap: '14px' }}>
-          <Link href="/" style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
-            홈
-          </Link>
           <Link href="/about" style={{ fontSize: '13px', color: 'var(--text-muted)' }}>
             소개
           </Link>
