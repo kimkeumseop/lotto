@@ -1,4 +1,18 @@
-export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
+function normalizeSiteUrl(value) {
+  if (!value) return ''
+  const trimmed = value.trim()
+  if (!trimmed) return ''
+  const withProtocol = trimmed.startsWith('http://') || trimmed.startsWith('https://')
+    ? trimmed
+    : `https://${trimmed}`
+  return withProtocol.replace(/\/+$/, '')
+}
+
+export const siteUrl =
+  normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL) ||
+  normalizeSiteUrl(process.env.VERCEL_PROJECT_PRODUCTION_URL) ||
+  normalizeSiteUrl(process.env.VERCEL_URL) ||
+  'https://lotto-self.vercel.app'
 
 export function buildFaqSchema(items) {
   return {
