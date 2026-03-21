@@ -1,4 +1,3 @@
-import Script from 'next/script'
 import './globals.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -44,6 +43,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ko">
       <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1059415497859090"
+          crossOrigin="anonymous"
+        />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta name="google-adsense-account" content="ca-pub-1059415497859090" />
         <meta
@@ -60,14 +64,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <Script
-          async
-          id="google-adsense"
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1059415497859090"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
-
         <Header />
         <div style={{ flex: 1 }}>{children}</div>
         <Footer />
