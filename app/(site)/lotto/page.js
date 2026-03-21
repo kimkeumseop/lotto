@@ -1,6 +1,6 @@
 import LottoGenerator from './LottoGenerator'
 import styles from './lotto.module.css'
-import { buildBreadcrumbSchema, buildFaqSchema, siteUrl } from '../lib/structuredData'
+import { buildBreadcrumbSchema, buildFaqSchema, siteUrl } from '../../lib/structuredData'
 
 const pageUrl = `${siteUrl}/lotto`
 

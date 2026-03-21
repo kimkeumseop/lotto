@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../info.module.css'
+import styles from '../../info.module.css'
 
 const issueUrl = 'https://github.com/kimkeumseop/lotto/issues'
 
