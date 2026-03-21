@@ -37,6 +37,9 @@ export const metadata = {
     description:
       '로또 645 자동 번호 생성기입니다. 자동 번호 생성과 당첨 번호 확인을 한 번에 이용할 수 있습니다.',
   },
+  verification: {
+    google: 'Uq__XjJJK6j-ipJKyUcbCDK6hy_aWPgaf3ep7bsbdlk',
+  },
 }
 
 export default function RootLayout({ children }) {
