@@ -1,10 +1,8 @@
 import './globals.css'
 
 export const metadata = {
-  verification: {
-    other: {
-      'naver-site-verification': '5ff06b09ff1e8e678dcd1036b1d7c6ec5a48a3c3',
-    },
+  other: {
+    'naver-site-verification': '5ff06b09ff1e8e678dcd1036b1d7c6ec5a48a3c3',
   },
 }
 
