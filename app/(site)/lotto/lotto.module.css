@@ -93,6 +93,7 @@
   transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease;
 }
 .input::placeholder{color:var(--lotto-input-placeholder)}
+.select option{background:#fff;color:#1a1a1a}
 .input:focus,.select:focus{border-color:rgba(255,185,0,.76);box-shadow:0 0 0 4px rgba(255,215,0,.14);transform:translateY(-1px)}
 .infoField{display:flex;align-items:center;color:var(--lotto-muted);background:rgba(255,248,232,.92)}
 .primaryButton,.secondaryButton{width:100%;border:none;cursor:pointer;font-family:inherit;transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
@@ -181,6 +182,7 @@
   .rankRow{border-bottom-color:rgba(255,255,255,.07)}
   .rankHead{background:rgba(255,255,255,.05);color:#fff}
   .input,.select,.infoField{border-color:rgba(255,255,255,.09)}
+  .select option{background:#081a39;color:#f7fbff}
   .infoField,.emptyState,.panelText,.winningPreview{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.07)}
   .feedbackSuccess{color:#d7ffe0}
   .feedbackWarning{color:#ffd8d4}
