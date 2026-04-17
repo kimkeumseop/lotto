@@ -14,14 +14,17 @@ export default function Header() {
         </Link>
 
         <nav className={styles.nav}>
+          <Link href="/lotto" className={styles.navLink}>
+            번호 생성기
+          </Link>
+          <Link href="/guide" className={styles.navLink}>
+            가이드
+          </Link>
+          <Link href="/tips" className={styles.navLink}>
+            팁
+          </Link>
           <Link href="/about" className={styles.navLink}>
             소개
-          </Link>
-          <Link href="/privacy" className={styles.navLink}>
-            개인정보처리방침
-          </Link>
-          <Link href="/terms" className={styles.navLink}>
-            이용약관
           </Link>
         </nav>
       </div>

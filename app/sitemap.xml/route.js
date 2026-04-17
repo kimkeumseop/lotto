@@ -1,9 +1,12 @@
 export async function GET() {
   const urls = [
-    { loc: 'https://lotto-self.vercel.app/lotto', changefreq: 'daily', priority: '1' },
-    { loc: 'https://lotto-self.vercel.app/privacy', changefreq: 'monthly', priority: '0.8' },
-    { loc: 'https://lotto-self.vercel.app/terms', changefreq: 'monthly', priority: '0.8' },
-    { loc: 'https://lotto-self.vercel.app/about', changefreq: 'monthly', priority: '0.8' },
+    { loc: 'https://lotto-self.vercel.app/', changefreq: 'weekly', priority: '1' },
+    { loc: 'https://lotto-self.vercel.app/lotto', changefreq: 'daily', priority: '0.9' },
+    { loc: 'https://lotto-self.vercel.app/guide', changefreq: 'monthly', priority: '0.85' },
+    { loc: 'https://lotto-self.vercel.app/tips', changefreq: 'monthly', priority: '0.85' },
+    { loc: 'https://lotto-self.vercel.app/about', changefreq: 'monthly', priority: '0.7' },
+    { loc: 'https://lotto-self.vercel.app/privacy', changefreq: 'monthly', priority: '0.5' },
+    { loc: 'https://lotto-self.vercel.app/terms', changefreq: 'monthly', priority: '0.5' },
   ]
 
   const lastmod = new Date().toISOString()

@@ -17,6 +17,15 @@ export default function Footer() {
           </div>
 
           <nav className={styles.footerLinks}>
+            <Link href="/lotto" className={styles.footerLink}>
+              번호 생성기
+            </Link>
+            <Link href="/guide" className={styles.footerLink}>
+              로또 가이드
+            </Link>
+            <Link href="/tips" className={styles.footerLink}>
+              번호 선택 팁
+            </Link>
             <Link href="/about" className={styles.footerLink}>
               서비스 소개
             </Link>
